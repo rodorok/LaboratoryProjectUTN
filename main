@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void menu();
+
+int main()
+{
+    char option;
+    do{
+        menu();
+        printf("\n\n");
+        option = getchar();
+        switch(option){
+            case 49:
+                system("cls");
+                printf("Gestion de usuarios");
+                printf("\n\n\n");
+                system("pause");
+                break;
+        }
+    }
+    while(option != 27);
+    return 0;
+}
+
+void menu(){
+    printf("\t\t\t\t**********************\n");
+    printf("\t\t\t\t*                    *\n");
+    printf("\t\t\t\t* MENU DE NAVEGACION *\n");
+    printf("\t\t\t\t*                    *\n");
+    printf("\t\t\t\t**********************\n");
+    printf("\n\n");
+    printf("\t\t\t--------------------------------------- \n");
+    printf("\t\t\tElija una opcion");
+    printf("\n");
+    printf("\n");
+    printf("\t\t\t 1 - Registro / Login ");
+    printf("\n\n");
+    printf("\t\t\t 2 - ");
+    printf("\n\n");
+    printf("\t\t\t--------------------------------------- \n");
+}
